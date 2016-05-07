@@ -1,0 +1,545 @@
+html{overflow-y:scroll; }
+*{
+	margin:0;
+	padding:0;
+}
+.header{
+	width:100%;
+	height:100px;
+	background:#019875;
+	position: relative;
+}
+.head,.img,.border{
+			width:120px;
+			height: 120px;
+		}
+	.head{
+		display: block;
+		position: relative;
+		margin:0 auto;
+		top:20px;
+		/* z-index: 5; */
+	}
+	.border{
+		  width:128px;
+		  height:128px;
+			position: absolute;
+			border: 10px solid #072256;
+			border-left-color:orange;
+			border-bottom-color:orange;
+      border-top-color:blue;
+      border-right-color:blue;
+			top: 9px;
+			left: -2px;
+			border-radius: 50%;
+			-webkit-transition:all .5s ease-in;
+			transition:all .5s ease-in;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+	.img{
+		position: absolute;
+		margin-top: 10px;
+		border-style: solid;
+		border-radius: 50%;
+	}
+	.img img{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+		border-radius: 50%;
+		box-sizing:border-box;
+		-webkit-transition:all .5s ease-in; 
+	}
+    .head:hover .border{
+    	-webkit-transform:rotate(180deg);
+    }
+    .head:hover img{
+    	opacity: 0.9;
+    }
+    .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: gray;
+  border-radius: 1px;
+}
+  #example-navbar-collapse{
+   	position: relative;
+   	width:80%;
+   	height:80px;
+   /* 	border:1px solid red; */
+   	left:10%;
+   	top:-106px;
+   	z-index: 10;
+   } 
+     #example-navbar-collapse ul{
+    	width:100%;
+    	height:80px;
+    	float:left;
+    	list-style: none;
+    	/* position: relative;
+    	top:-100px; */
+    }
+     #example-navbar-collapse ul li{
+    	width:25%;
+    	height:80px;
+    	float:left;
+    }
+    #example-navbar-collapse ul li a{
+    	width:100%;
+    	height:80px;
+    	line-height:125px;/* 大于height使文字可以下移 */
+    	display: block;
+    	color:white;
+    	padding-left:32%;
+    	font-size: 20px;
+    	font-weight: 700;
+    	padding-bottom:-10px;
+    	text-decoration: none;
+    	overflow: hidden;
+    }
+     #example-navbar-collapse ul li a:hover{
+          color:#ffd200;
+          text-decoration: underline;
+    }
+    @media screen and (min-width:760px) and (max-width:1024px){
+       #example-navbar-collapse ul li a{font-size:12px;}
+    }
+    @media screen and (min-width:759px){
+       #example-navbar-collapse{display: none;}
+    }
+    @media  screen and (max-width:758px){
+       #example-navbar-collapse {
+           position: relative;
+           width: 400px;
+           height: 50px;
+          /*  border: 1px solid red;  */
+           top: -70px;
+           left:0px;
+           z-index: 10;
+}
+          #example-navbar-collapse ul{
+            float:left;
+            height:50px;
+            margin-top:-38px;
+            opacity: 0.8;
+
+          }
+        #example-navbar-collapse ul li{
+          width:100px;
+          margin-left:-30px; 
+          height:40px;
+          margin-top:-5px;
+          z-index: 20;
+          position: relative; 
+
+        } 
+        #example-navbar-collapse ul li a{
+          float:left;
+          color:black;
+          font-size: 15px;
+         padding-top:5px;
+         display: block;
+         width:100%;
+        
+        }
+        
+    }
+    .color{
+      width:100%;
+      height:60px;
+      position: relative;
+      top:-112px;
+      background: #87CEEB;
+      float:left;
+      z-index: -100;/* 在最底层 */
+    }
+
+
+@media screen and (max-width:768px){
+  .color{margin-top:112px;}
+}
+ 
+
+ .topmenu{
+    list-style: none;
+    background: #708090 none repeat scroll 0% 0%;
+        width:160px;
+        height:200px;
+        padding-bottom: 8px;
+        padding-top:2px;
+        float:left;
+        margin-top:-112px;
+  }
+  .topmenu li{
+    height:32px;
+    width:179px;
+    line-height: 32px;
+    position: relative;
+     left:-20px;
+     top:15px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #252525;
+    padding-left:40px;
+  }
+  .topmenu li a{
+    color:white;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+  .topmenu li:hover{
+    background:white;
+    border-top: 2px solid #2B2B2B;
+    border-bottom: 2px solid #2B2B2B;
+    box-shadow: 0 0 8px white;
+    -moz-box-shadow:0 0 8px white;
+    -webkit-box-shadow:0 0 8px white; /* 0 0是水平，垂直偏移距离， 8px是模糊范围，适合高亮效果 */
+  }
+  
+  .topmenu li:hover a{
+    color:black;
+    text-decoration: underline;
+  }
+.topmenu .leftdiv{
+   /*  background: gray; */
+    position: absolute;
+    color:black;
+    width:498px;
+    height:200px;
+    margin-top:-50px;
+    margin-left:140px;
+    /* float:left; */
+    display: block;
+    z-index: -500;
+  } 
+  .topmenu  .rightdiv{
+  /*  border:1px solid red; */
+    color:white;
+    font-weight: 600;
+    width:782px;
+    height:200px;
+    position: absolute;
+    left:678px;
+    top:-18px;
+    background: #708090;
+  }
+  
+  .item img{
+    border-radius: 0;
+    height:200px;
+  }
+  .rightdiv h3{
+    text-align: center;
+  }
+  .rightdiv dl{
+    width:auto;
+    height:40px;
+    float:left;
+    margin-left:50px;
+  }
+   .rightdiv dl dd{
+        height:18px;
+        line-height:18px;
+        border-bottom: 1px solid #333;
+        margin-left:80px;
+        margin-top:-20px;
+        text-align: center;
+  }
+  .topmenu .major{
+    margin-top:-32px;
+    display: none;
+  }
+  .topmenu .major .rightdiv{
+    margin-top:-32px;
+  }
+  .topmenu .major .rightdiv p{
+    width:250px;
+    height:auto;
+    margin:0 auto;
+  }
+  .topmenu li:hover .major{
+     display: block;
+  }
+  .topmenu .learn{
+    display: none;
+  }
+   .topmenu .learn .leftdiv {
+    position: absolute;
+    top:-32px;
+    background:#708090; 
+    
+  } 
+    .topmenu .learn .leftdiv h3{
+      text-align: center;
+      color:white;
+    }
+    .topmenu .learn .leftdiv p{
+      color:white;
+    }
+  .topmenu .learn .rightdiv{
+     position: absolute;
+     top:-82px;
+  }
+  .topmenu li:hover .learn{
+    display: block;
+  }
+  .topmenu li:hover .sport{
+    display: block;
+  }
+  .sport{
+    display: none;
+  }
+  .sport .leftdiv{
+    width:498px;
+    height:200px;
+    background: #708090;
+    margin-top:-146px;
+  }
+  .sport .rightdiv{
+    margin-top:-96px;
+  }
+  .sport .rightdiv p{
+    width:250px;
+    height:auto;
+    margin:0 auto;
+  }
+ /*  卡片图片 */
+ .practice{
+  display: none;
+ }
+ .practice .leftdiv{
+    width:498px;
+    height:200px;
+    background: #708090; 
+    margin-top:-178px;
+    overflow: hidden;
+ }
+ .practice .leftdiv .card img{
+  width:250px;
+  height:140px;
+  position: absolute;
+  margin:30px auto;
+  left:110px;
+  border:10px solid #fff;
+  box-sizing:border-box;
+  box-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+  -webkit-transform-origin:center 400px;
+ /*  -webkit-transition: transform .7s ease; */
+ }
+ .card img:first-child{
+   transform:rotate(12deg);
+ }
+ .card img:last-child{
+   transform:rotate(-12deg);
+ }
+ .practice .rightdiv{
+  margin-top:-129px;
+ }
+ .practice .rightdiv h3{
+  margin-top:-1px;
+ }
+ .practice .rightdiv p{
+  font-size: 12px;
+  font-weight: 600;
+  margin-top:-20px;
+ }
+ .topmenu li:hover .practice{
+  display: block;
+ }
+ @media screen and (max-width: 768px){
+   .topmenu .rightdiv{
+    position:absolute;
+    top:182px;
+    left:0;
+  }
+  #teac{
+   margin-top:201px;
+   } 
+ }
+ #teac{
+  width:100%;
+  height:auto;
+  position: absolute;
+  background:#708090;
+  top:360px;
+  color:white; 
+ }
+ #teac h3{
+  width:100%;
+  padding:10px 42.5%;
+}
+#teac p{
+  width:200px;
+  height:150px;
+  background: white;
+  color:black;
+  border-radius: 10px;
+  float:left;
+  margin-left:100px;
+  padding-top:10px;
+  padding-left:5px;
+  padding-right:5px;
+}
+#play{
+  width:100%;
+  height:350px;
+  position: absolute;
+  top:600px;
+}
+#play img{
+  height:100%;
+}
+/* @media screen and (min-width:1328px) and (max-width:1343px){
+  #play{
+    position: absolute;
+    top:624px;
+  }
+} */
+
+@media screen and (min-width:1217px) and (max-width:1343px){
+  #play{
+    position: absolute;
+    top:624px;
+  }
+}
+  @media screen and (min-width:768px) and (max-width:1216px){
+    #play{
+    position: absolute;
+    top:784px;
+  }
+}
+@media screen and (min-width:704px) and (max-width:767px){
+   #play{
+    position: absolute;
+    top:984px;
+  }
+}
+@media screen and (min-width:617px) and (max-width:703px){
+   #play{
+    position: absolute;
+    top:1010px;
+  }
+}
+@media screen and (min-width:497px) and (max-width:616px){
+   #play{
+    position: absolute;
+    top:1330px;
+  }
+}
+@media screen and (min-width:384px) and (max-width:496px){
+  #play{
+    position: absolute;
+    top:1356px;
+  }
+}
+@media screen and (max-width:383px){
+#play{
+    position: absolute;
+    top:1382px;
+  }
+}
+#contact{
+  width:100%;
+  height:auto;
+  position: absolute;
+  top:952px;
+  background:#708090; 
+}
+#contact .con1,.con2{
+  width:40%;
+  height:auto;
+  float: left;
+  margin-top:20px;
+}
+#contact .con1{
+  margin-left:80px;
+}
+#contact  p{
+    background: url("images/arrow_blue.png") no-repeat;
+    text-indent: 20;
+}
+@media screen and (min-width:1217px) and (max-width:1343px){
+  #contact{
+    position: absolute;
+    top:976px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1216px){
+    #contact{
+    position: absolute;
+    top:1136px;
+  }
+}
+@media screen and (min-width:704px) and (max-width:767px){
+   #contact{
+    position: absolute;
+    top:1336px;
+  }
+}
+@media screen and (min-width:617px) and (max-width:703px){
+   #contact{
+    position: absolute;
+    top:1362px;
+  }
+}
+@media screen and (min-width:497px) and (max-width:616px){
+   #contact{
+    position: absolute;
+    top:1682px;
+  }
+}
+@media screen and (min-width:384px) and (max-width:496px){
+  #contact{
+    position: absolute;
+    top:1708px;
+  }
+  .con2{
+    position: absolute;
+    left:220px;
+  }
+  .con2 p{width:220px;}
+}
+@media screen and (max-width:383px){
+#contact{
+    position: absolute;
+    top:1734px;
+  }
+  .con2{
+    position: absolute;
+    left:200px;
+  }
+}
+/* 返回顶部 */
+#sanjiao{
+  width:0px;
+  height:0px;
+  border:20px solid transparent;
+  border-bottom-color:green;
+  display: block;
+  position: fixed;/* 固定位置 */
+  left:90%;
+  top:650px;
+} 
+#sanjiao span{
+  width:100px;
+  height:80px;
+  float:left;
+  color:white;
+  font-weight: 700;
+  position: relative;
+  top:30px;
+  left:-28px;
+}
+/* 定位到页面顶部，可以设置大小都是0 */
+  #test1{
+    width:100px;
+    height:80px;
+    color:blue;
+    position: absolute;
+    top:0px;
+    /* background: gray; */
+    margin:auto;
+  }

@@ -1,0 +1,238 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  <!-- <embed src="audio/平凡之路.mp3" loop="-1" width="0"></embed> -->
+ <!--  影响页面布局 -->
+</head>
+<body>
+ <!--  html5背景音乐不会影响页面布局 -->
+<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+<source src="audio/平凡之路.mp3" type="audio/ogg" />
+</audio>
+	<!-- 头部导航栏开始 -->
+<div class="header">
+	<div class="head">
+	<div class="img">
+		<img src="images/pic1.jpg">
+	</div>
+	<div class="border"></div>
+    </div>
+  <!-- <div class="nav"> -->
+  	 <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    <div class="collapse navbar-collapse bs-js-navbar-scrollspy" id="example-navbar-collapse">
+   	<ul>
+   		<li><a href="#">个人信息/项目图</a></li>
+   		<li><a href="#teac">熟悉技术</a></li>
+   		<li><a href="#play">生活，爱好</a></li>
+   		<li><a href="#contact">联系方式</a></li>
+   	</ul>
+   	</div>
+   </div> 
+<div class="color"></div>
+<!-- 个人信息与轮播图开始 -->
+<ul class="topmenu">
+<li><a href="#">学校信息</a>
+ <div class="school">
+   <div class="leftdiv">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/school1.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="images/school2.jpg" alt="..."> 
+    </div>
+    <div class="item">
+      <img src="images/school3.jpg" alt="..."> 
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   </div>
+   <div class="rightdiv">
+     <h3>东华理工大学</h3>
+     <dl>
+      <dt>创办时间</dt>
+      <dd>1956年10月16日</dd>
+    </dl>
+     <dl>
+      <dt>主管部门</dt>
+      <dd>江西省人民政府</dd>
+    </dl>
+    <dl>
+      <dt>所属地区</dt>
+      <dd>江西省,南昌市</dd>
+    </dl>
+    <dl>
+      <dt>类别</dt>
+      <dd>公立大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
+    </dl>
+    <dl>
+      <dt>学校类型</dt>
+      <dd>工科</dd>
+    </dl>
+    <dl>
+      <dt>知名校友</dt>
+      <dd>龚健雅、应明生、施尔畏、方励、李子颖...</dd>
+    </dl>
+    <dl>
+      <dt>学校官网</dt>
+      <dd>http://www.ecit.edu.cn</dd>
+    </dl>
+   </div>
+ </div>
+</li>
+<li><a href="#">专业信息</a>
+ <div class="major">
+   <div class="leftdiv">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/major1.jpg" alt="...">
+    </div>
+    <div class="item">
+      <img src="images/major2.jpg" alt="..."> 
+    </div>
+    <div class="item">
+      <img src="images/major3.jpg" alt="..."> 
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   </div>
+   <div class="rightdiv">
+     <h3>专业信息</h3>
+     <p>软件工程专业，学习了C语言，C++，JAVA，C#，数据结构，web，J2EE...</p>
+   </div>
+ </div>
+</li>
+<li><a href="#">在校学习情况</a>
+<div class="learn">
+  <div class="leftdiv">
+  <h3>学习情况</h3>
+  <p>&nbsp;&nbsp;在校期间没有记过或受处分,学习成绩中上,挂科较少，好像加起来四门，两门重修，两门补考通过，大三比较用功，没有挂科，英语较好，四级486分，六级因为一些原因没有考</p>
+  </div>
+  <div class="rightdiv"></div>
+</div>
+</li>
+<li><a href="#">参加的课外活动</a>
+<div class="sport">
+  <div class="leftdiv"></div>
+  <div class="rightdiv">
+    <h3>课外活动</h3>
+    <p>运动会广播体操，歌咏比赛，辩论赛，冬季抱抱团活动，滕王阁重阳节关爱老人活动，植树活动...</p>
+  </div>
+</div>
+</li>
+<li><a href="#">项目实践</a>
+<div class="practice">
+   <div class="leftdiv">
+   <div class="card">
+   <img src="images/project1.png" />
+   <img src="images/project2.png" />
+   <img src="images/project3.png" /> 
+   </div> 
+  </div>
+  <div class="rightdiv">
+    <h3>项目介绍</h3>
+    <p>&nbsp;&nbsp;培训开始期间，老师布置一个XX学校学生管理系统给我们做，就是实现导航栏布局，侧边的二级下拉菜单，还有按钮的一些动画效果，比如旋转360度，左移，右移等效果；第二个是登陆注册页面，要判断输入框的用户名，密码等不为空和格式的正确性，那是没有学习HTML5，感觉很麻烦，有HTML5之后会很简单；第三个项目是服装商店，页面要实现换肤，下拉效果，轮播图效果，放大镜效果，评分，购物车结账等，以小组7人为单位做，基本上完美实现上述功能；第四个是几天前老师布置的项目，运用bbootstrap制作一个页面，页面有5个部分组成，页面头部是一个固定的导航栏，导航栏下方有轮播图，第三块没什么效果，第四块有八张图片，分两行显示，并且要实现鼠标放在某图片上出现对应的信息，第五块也是轮播图，但是不是自动的，是实现点击之后实现滚动。 </p>
+  </div> 
+</div>
+</li>
+</ul>	                
+</div>
+ <div id="teac">
+  <h3>熟悉技能/自我评价</h3>
+  <p>CSS，CSS3，javascript，jquery,jquery mobile,bootstrap等技术，现在基本掌握web开发的应有技术 </p>
+  <p>开发工具有sublime  notepad++ dreamweaver</p>
+  <p>本人在校期间学习比较刻苦，守时，守信，爱专研，英语还行，与人和善，乐于助人，能很快融入团队，能够积极与人交流</p>
+  <p>求职意向：web前端开发</p>
+</div>
+<div id="play">
+  <div id="myCarousel" class="carousel slide">
+   <!-- 轮播（Carousel）指标 -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>  
+   <!-- 轮播（Carousel）项目 -->
+   <div class="carousel-inner">
+      <div class="item active">
+         <img src="images/play2.jpg" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="images/play1.jpg" alt="Second slide">
+      </div>
+      <div class="item">
+         <img src="images/play3.jpg" alt="Third slide">
+      </div>
+   </div>
+</div> 
+</div> 
+<div id="contact">
+  <div class="con1">
+  <p>Twitter:无</p>
+  <p>Facebook:无</p>
+  <p>Flickr:无</p>
+  <p>Blogger:无</p>
+</div>
+<div class="con2">
+  <p>邮箱:1422786368@qq.com</p>
+  <p>电话:13170885121</p>
+</div>
+</div>
+<!-- 返回顶部 -->
+<div>
+    <a href="#test1"><div id="sanjiao"><span>返回顶部</span></div></a>
+  </div>
+  <div id="test1"></div>
+</body>
+</html>
